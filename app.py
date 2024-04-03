@@ -34,5 +34,5 @@ with col2:
 st.text('')
 if st.button("Predict Performance Rate"):
     result = clf.predict(
-        np.array([[el,tos,top,gr,1,1,1,1]]))
+        np.array([[el,tos,top,gr,1,1,1,1,1,1]]))
     st.text(result[0])
