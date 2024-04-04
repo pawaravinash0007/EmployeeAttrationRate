@@ -11,7 +11,7 @@ def predict(data):
     return clf.predict(data)
 
 
-st.title("Employee Attration Rate Project using Machin Learning")
+st.title("Employee Attrition Rate Project using Machine Learning")
 st.markdown("This Model Identify weather performance of employee are good no not")
 
 st.header("Employee Details")
