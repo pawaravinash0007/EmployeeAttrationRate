@@ -29,11 +29,11 @@ with col2:
 	st.text("Growth Rate")
 	gr = st.slider("Growth Rate", 1,5,2)
 	st.text("Post Level")
-	gr = st.slider("Post Level", 1,5,2)
+	gr1 = st.slider("Post Level", 1,5,2)
 
 st.text('')
 if st.button("Predict Performance Rate"):
     result = clf.predict(
-        np.array([[el,tos,top,gr,1,1,1,1,1,1]]))
+        np.array([[el,tos,top,gr,gr1,1,1,1,1,1]]))
     st.text(result[0])
 st.markdown("Developed by External Guide Avinash Pawar and WBL Intern at NIELIT Daman")
